@@ -138,10 +138,7 @@ function showResult() {
     const tipsList = tipsElement.querySelector('ul');
     
     // Get explanations for questions that were answered incorrectly
-    const wrongAnswers = [];
     for (let i = 0; i < quizData.length; i++) {
-        // Since we don't track which questions were wrong, we'll show all explanations
-        // In a real app, you'd track which were answered incorrectly
         const li = document.createElement('li');
         li.textContent = quizData[i].explanation;
         tipsList.appendChild(li);
@@ -154,3 +151,19 @@ function restartQuiz() {
     document.getElementById('quiz-result').classList.add('hidden');
     document.getElementById('quiz-intro').classList.remove('hidden');
 }
+
+// New functionality to show/hide sections
+document.addEventListener('DOMContentLoaded', () => {
+    const initialHeroSection = document.getElementById('initial-hero-section');
+    const startNowButton = document.getElementById('start-now-button');
+    const allOtherSections = document.getElementById('all-other-sections');
+
+    // Initially hide all other sections
+    allOtherSections.classList.add('hidden');
+
+    // Add event listener to the "Comece agora" button
+    startNowButton.addEventListener('click', () => {
+        initialHeroSection.classList.add('hidden'); // Hide the initial hero section
+        allOtherSections.classList.remove('hidden'); // Show all other sections
+    });
+});
