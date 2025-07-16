@@ -5,7 +5,6 @@
 ## 💡 O que o site oferece
 - Dicas práticas de sustentabilidade
 - Informações sobre mudanças climáticas e a COP 30
-- Jogo educativo “Letradinho” para crianças
 - Conteúdos acessíveis para todas as idades
 
 ## 🔧 Tecnologias utilizadas
