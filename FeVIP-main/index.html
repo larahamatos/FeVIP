@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAção: Pequenas Atitudes, Grandes Impactos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-600 to-emerald-800 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4a22a7db-9e4a-4331-9eee-bf8fc00cd279.png" alt="Logotipo EcoAção - folha verde estilizada formando um globo terrestre" class="h-12 w-12 mr-3" />
+                    <h1 class="text-2xl md:text-3xl font-bold">EcoAção</h1>
+                </div>
+                <p class="text-sm md:text-base italic">Pequenas Atitudes, Grandes Impactos</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Initial Model) -->
+    <section id="initial-hero-section" class="relative bg-green-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Juntos pelo nosso planeta</h2>
+                    <p class="text-lg text-gray-600 mb-6">Descubra como pequenas mudanças no seu dia a dia podem fazer uma grande diferença para o meio ambiente e para o futuro do nosso planeta.</p>
+                    <button id="start-now-button" class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 inline-block">Comece agora</button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d3a69dc9-28ce-4bc6-9f6d-abf5079076eb.png" alt="Grupo diversificado de pessoas plantando árvores em um parque comunitário em um dia ensolarado" class="rounded-lg shadow-xl w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All other sections (initially hidden) -->
+    <div id="all-other-sections" class="hidden">
+        <!-- Dicas Sustentáveis Section -->
+        <section id="acoes" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Dicas Sustentáveis para o Dia a Dia</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-emerald-50 p-6 rounded-xl shadow-md sustainability-card">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/038c90d1-176e-4933-b974-801f309cb56a.png" alt="Ícone de luz desligada representando economia de energia" class="w-8 h-8" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Economize Energia</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Troque lâmpadas por LED</li>
+                            <li>Desligue aparelhos da tomada</li>
+                            <li>Aproveite a luz natural</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-emerald-50 p-6 rounded-xl shadow-md sustainability-card">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/07851537-03e3-47da-adb8-081ddee1d5a7.png" alt="Ícone de torneira com gota d'água representando consumo consciente" class="w-8 h-8" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Reduza o Consumo de Água</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Tome banhos mais curtos</li>
+                            <li>Conserte vazamentos</li>
+                            <li>Reutilize água da chuva</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="bg-emerald-50 p-6 rounded-xl shadow-md sustainability-card">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/258c3fa3-0a9e-42ac-b782-a1a877aeb8c1.png" alt="Ícone de sacola de compras reutilizável representando consumo consciente" class="w-8 h-8" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Consumo Consciente</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Use sacolas reutilizáveis</li>
+                            <li>Compre a granel</li>
+                            <li>Evite plásticos descartáveis</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="bg-emerald-50 p-6 rounded-xl shadow-md sustainability-card">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0451437e-2038-4faf-a37e-0f9a4401c908.png" alt="Ícone de lixeiras de reciclagem coloridas representando separação de resíduos" class="w-8 h-8" />
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Separe Seu Lixo</h3>
+                        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>Lave embalagens recicláveis</li>
+                            <li>Tenha lixeiras separadas</li>
+                            <li>Descarte pilhas e eletrônicos corretamente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aquecimento Global Section -->
+        <section class="py-16 bg-gradient-to-b from-green-50 to-emerald-100">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="./grafico.png" alt="Gráfico mostrando o aumento da temperatura global ao longo dos anos com efeitos visíveis como derretimento de geleiras" class="rounded-lg shadow-lg w-full" />
+                    </div>
+                    <div class="md:w-1/2 md:pl-12">
+                        <h2 class="text-3xl font-bold mb-6">Entendendo o Aquecimento Global</h2>
+                        <div class="space-y-4">
+                            <p>O aquecimento global é o aumento da temperatura média da Terra causado principalmente pela emissão excessiva de gases de efeito estufa, como o dióxido de carbono (CO₂).</p>
+                            
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <h3 class="font-semibold text-lg mb-2 text-green-700">Principais causas:</h3>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Queima de combustíveis fósseis</li>
+                                    <li>Desmatamento</li>
+                                    <li>Agricultura e pecuária intensivas</li>
+                                    <li>Indústrias poluentes</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded-lg shadow">
+                                <h3 class="font-semibold text-lg mb-2 text-green-700">Consequências:</h3>
+                                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                                    <li>Derretimento de geleiras</li>
+                                    <li>Aumento do nível do mar</li>
+                                    <li>Eventos climáticos extremos</li>
+                                    <li>Perda de biodiversidade</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COP 30 Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">COP 30 - Belém do Pará</h2>
+                
+                <div class="bg-emerald-50 rounded-xl p-6 shadow-md max-w-4xl mx-auto">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3cd8f3e8-18ea-418a-bdab-80c2f4a6d3c4.png" alt="Vista aérea da cidade de Belém com o encontro das águas do Rio Amazonas destacado, local da COP 30" class="w-full rounded-lg mb-6" />
+                    
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">A Conferência do Clima em 2025</h3>
+                    
+                    <p class="mb-4">A 30ª Conferência das Partes da Convenção-Quadro das Nações Unidas sobre Mudança do Clima (COP 30) será realizada em Belém, no Pará, em 2025. Será a primeira vez que a Amazônia brasileira sedia o evento.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold text-lg mb-2 text-green-700">Objetivos</h4>
+                            <p>Discutir ações concretas para limitar o aquecimento global a 1,5°C e acelerar a transição energética.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold text-lg mb-2 text-green-700">Importância</h4>
+                            <p>Destacar o papel crucial da Amazônia na regulação climática e fortalecer a proteção das florestas.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold text-lg mb-2 text-green-700">Brasil</h4>
+                            <p>Oportunidade para o país liderar as discussões sobre desenvolvimento sustentável na região amazônica.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-lg mb-3 text-green-800">Notícias Recentes:</h4>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-green-600 pl-4">
+                                <h5 class="font-medium">Preparativos começam em Belém</h5>
+                                <p class="text-sm text-gray-600">Infraestrutura da cidade está sendo adaptada para receber os participantes da COP 30.</p>
+                            </div>
+                            <div class="border-l-4 border-green-600 pl-4">
+                                <h5 class="font-medium">ONGs se preparam para eventos paralelos</h5>
+                                <p class="text-sm text-gray-600">Organizações da sociedade civil planejam atividades para pressionar por mais ações climáticas.</p>
+                            </div>
+                            <div class="border-l-4 border-green-600 pl-4">
+                                <h5 class="font-medium">Jovens promovem mobilização</h5>
+                                <p class="text-sm text-gray-600">Movimentos juvenis começam a se organizar para levar suas demandas à conferência.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="py-16 bg-green-600 text-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Quiz: O que você pode mudar no seu dia a dia?</h2>
+                
+                <div class="bg-white text-gray-800 rounded-xl p-6 shadow-lg max-w-3xl mx-auto">
+                    <div id="quiz-container">
+                        <div id="quiz-intro">
+                            <h3 class="text-2xl font-semibold mb-4 text-green-700">Teste seus conhecimentos</h3>
+                            <p class="mb-6">Responda essas 5 perguntas rápidas e descubra como você pode ser mais sustentável no seu cotidiano.</p>
+                            <button onclick="startQuiz()" class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-8 rounded-full transition duration-300 block mx-auto">Começar Quiz</button>
+                        </div>
+                        
+                        <div id="quiz-questions" class="hidden">
+                            <div class="mb-6">
+                                <h3 id="question" class="text-xl font-medium mb-4 text-green-700"></h3>
+                                <div id="options" class="space-y-3"></div>
+                            </div>
+                            <button id="next-btn" onclick="nextQuestion()" class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 hidden">Próxima</button>
+                        </div>
+                        
+                        <div id="quiz-result" class="hidden text-center">
+                            <h3 id="result-title" class="text-2xl font-semibold mb-4 text-green-700"></h3>
+                            <p id="result-desc" class="mb-6"></p>
+                            <div id="result-tips" class="text-left"></div>
+                            <button onclick="restartQuiz()" class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-full transition duration-300 mt-6">Fazer novamente</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projetos Escolares Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Projetos da Escola</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Projeto 1 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2af78882-761b-4525-ac1f-e8a41d5dc5ba.png" alt="Estudantes plantando mudas de árvores em área verde da escola como parte de projeto de reflorestamento" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-green-700">Horta Escolar Sustentável</h3>
+                            <p class="text-gray-600 mb-4">Projeto que envolve alunos no cultivo de hortaliças orgânicas, usando compostagem dos resíduos da merenda escolar.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="mr-3">Participantes: 45 alunos</span>
+                                <span>Desde: 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Projeto 2 -->
+                    <div class="border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/84a424d1-d15f-475a-af9f-43c77cbb42f4.png" alt="Alunos apresentando cartazes coloridos sobre coleta seletiva em feira de ciências escolar" class="w-full h-48 object-cover" />
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-green-700">Coleta Seletiva Solidária</h3>
+                            <p class="text-gray-600 mb-4">Programa de separação de resíduos recicláveis que são doados para cooperativas de catadores da região.</p>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <span class="mr-3">Participantes: Toda a escola</span>
+                                <span>Desde: 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="call-to-action-section">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">Faça parte dessa mudança!</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">Pequenas ações fazem grande diferença quando realizadas por muitas pessoas. Compartilhe esse conhecimento e convide amigos e familiares a praticarem a sustentabilidade.</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button onclick="document.getElementById('register-modal').classList.remove('hidden')" class="register-action-button">
+                        Cadastre sua ação
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap+8">
+                    <div class="mb-8 md:mb-0">
+                        <div class="flex items-center mb-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8082e659-78d5-414a-904e-9907212dd3c0.png" alt="Pequeno logo do EcoAção" class="h-8 w-8 mr-2" />
+                            <span class="font-bold text-white">EcoAção</span>
+                        </div>
+                        <p class="text-sm">Pequenas atitudes, grandes impactos na preservação do nosso planeta.</p>
+                    </div>
+                    
+                    <div class="mb-8 md:mb-0">
+                        <h4 class="text-white font-medium mb-4">Links Úteis</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white text-sm">Dicas Sustentáveis</a></li>
+                            <li><a href="#" class="hover:text-white text-sm">Sobre a COP 30</a></li>
+                            <li><a href="#" class="hover:text-white text-sm">Projetos Escolares</a></li>
+                            <li><a href="#" class="hover:text-white text-sm">Quiz Interativo</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-8 md:mb-0">
+                        <h4 class="text-white font-medium mb-4">Contato</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>contato@ecoacao.com.br</li>
+                            <li>(91) 1234-5678</li>
+                            <li>Belém - PA</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="#">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a83ac32b-3e30-4721-9f95-c37e311cef90.png" alt="Ícone do Instagram para seguir o projeto EcoAção" class="h-8 w-8" />
+                            </a>
+                            <a href="#">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e91cac72-fd22-478a-873a-612e3c420a91.png" alt="Ícone do Facebook para seguir o projeto EcoAção" class="h-8 w-8" />
+                            </a>
+                            <a href="#">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d7c2576d-2679-4262-b0de-d6e9c0a24e05.png" alt="Ícone do YouTube para seguir o projeto EcoAção" class="h-8 w-8" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                    <p>© 2023 EcoAção. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal de Cadastro -->
+    <div id="register-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg max-w-md w-full">
+            <h3 class="text-xl font-bold mb-4">Cadastre sua ação sustentável</h3>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Nome</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">E-mail</label>
+                    <input type="email" class="w-full px-3 py-2 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2">Ação realizada</label>
+                    <textarea class="w-full px-3 py-2 border rounded-lg" rows="3"></textarea>
+                </div>
+                <div class="flex justify-end space-x-3">
+                    <button type="button" onclick="document.getElementById('register-modal').classList.add('hidden')" class="px-4 py-2 text-gray-600">Cancelar</button>
+                    <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
